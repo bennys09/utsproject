@@ -1,6 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RuangController;
+use App\Http\Controllers\MahasiswaController;
+
+// ...
+
+Route::resource('ruang', RuangController::class);
+Route::resource('mahasiswa', MahasiswaController::class);
 
 /*
 |--------------------------------------------------------------------------
